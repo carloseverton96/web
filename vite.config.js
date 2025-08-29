@@ -4,6 +4,7 @@ import path from 'path'; // ⬅️ importa o path do Node.js
 
 export default defineConfig({
   plugins: [react()],
+  base: '/web/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'), // ⬅️ define o alias "@"
