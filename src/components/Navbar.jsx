@@ -7,8 +7,13 @@ export default function Navbar() {
       <div className="brand">Doutrina Espírita</div>
       <ul className="nav-links">
         <li><Link to="/">Início</Link></li>
+        <li><Link to="/biografias">Biografias</Link></li>
+        <li><Link to="/educacionais">Educacionais</Link></li>
+        <li><Link to="/home">Home</Link></li>
+        <li><Link to="/mediunicas">Mediúnicas</Link></li>
+        <li><Link to="/sociais">Sociais</Link></li>
+        <li><Link to="/contato">Contato CECRE</Link></li>
         <li><Link to="/doutrina">Doutrina</Link></li>
-        <li><Link to="/contato">Contato</Link></li>
       </ul>
     </nav>
   );
