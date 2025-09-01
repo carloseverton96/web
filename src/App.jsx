@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 
 import Doutrina from "./pages/Doutrina";
 import Contato from "./pages/Contato";
-import Inicio from "./pages/inicio";
+import Inicio from "./pages/Inicio";
 
 export default function App() {
   return (
