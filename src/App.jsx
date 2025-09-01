@@ -1,9 +1,10 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Inicio from "./pages/inicio";
+
 import Doutrina from "./pages/Doutrina";
 import Contato from "./pages/Contato";
+import Inicio from "./pages/inicio";
 
 export default function App() {
   return (
