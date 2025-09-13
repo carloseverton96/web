@@ -1,5 +1,6 @@
 import React from "react";
 import evangelho from "../assets/evangelho.png";
+import  "../index.css";
 
 export default function Inicio() {
   return (
@@ -39,23 +40,26 @@ export default function Inicio() {
               </p>
             </section>
       
-            <section>
-              <h2>Evangelho no Lar</h2>
-      
-              <img
-                    src={evangelho}
-                    alt="Segundo passo da solicitação"
-                    className="mb-2 w-full max-w-[100px] mx-auto"
-                  />
-      
-              <h3>Roteiro prático</h3>
-              <p>
-                O Evangelho no Lar é uma reunião semanal em família, com leitura e reflexão sobre os ensinamentos cristãos. Fortalece a espiritualidade e o equilíbrio no ambiente doméstico.
-              </p>
-              <p>
-                Para implantá-lo: converse com a família, defina dia e horário, escolha uma mensagem inicial, abra o Evangelho Segundo o Espiritismo (aleatoriamente ou de forma sequencial), reflita sobre o conteúdo e finalize com uma prece. O encontro deve durar entre 15 e 20 minutos. Coloque uma jarra com água para fluidificação.
-              </p>
-            </section>
+            <section class="evangelho-section">
+  <div>
+    <h2>Evangelho no Lar</h2>
+    <img
+      src={evangelho}
+      alt="Segundo passo da solicitação"
+    />
+  </div>
+
+  <div>
+    <h3>Roteiro prático</h3>
+    <p>
+      O Evangelho no Lar é uma reunião semanal em família, com leitura e reflexão sobre os ensinamentos cristãos. Fortalece a espiritualidade e o equilíbrio no ambiente doméstico.
+    </p>
+    <p>
+      Para implantá-lo: converse com a família, defina dia e horário, escolha uma mensagem inicial, abra o Evangelho Segundo o Espiritismo (aleatoriamente ou de forma sequencial), reflita sobre o conteúdo e finalize com uma prece. O encontro deve durar entre 15 e 20 minutos. Coloque uma jarra com água para fluidificação.
+    </p>
+  </div>
+</section>
+
       
             <section>
               <h2>Livraria</h2>
