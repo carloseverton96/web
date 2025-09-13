@@ -1,10 +1,10 @@
 import React from "react";
 import { Suspense, lazy } from "react";
 
-const Barbalha = lazy(() => import("../components/casas/barbalha"));
-const Crato = lazy(() => import("../components/casas/crato"));
-const Juazeiro = lazy(() => import("../components/casas/juazeiro"));
-const MissaoVelha = lazy(() => import("../components/casas/missaoVelha"));
+const Barbalha = lazy(() => import("../components/casas/Barbalha"));
+const Crato = lazy(() => import("../components/casas/Crato"));
+const Juazeiro = lazy(() => import("../components/casas/Juazeiro"));
+const MissaoVelha = lazy(() => import("../components/casas/MissaoVelha"));
 // ...e assim por diante
 
 
