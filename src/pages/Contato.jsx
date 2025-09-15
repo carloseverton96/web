@@ -9,7 +9,7 @@ export default function Contato() {
       <ul>
         <li>Email: comunhaocristoredentor@gmail.com</li>
         <li>Telefone: <a href="https://wa.me/+5588999721897" target="_blank">(88) 9 9972-1897</a></li>
-        <li>Endereço: Rua Delmiro Gouveia, 1493, Salesianos, Juazeiro do Norte - CE, 63050-216</li>
+        <li>Endereço: Rua Delmiro Gouveia, 1493, Salesianos, Juazeiro do Norte - CE, 63050-216.</li>
       </ul>
     </section>
     <section>

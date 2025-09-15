@@ -35,6 +35,16 @@ body {
   padding-top: 0; /* removido o padding fixo para evitar sobreposição no mobile */
 }
 
+footer{
+  text-align: center;
+  padding: 0.5rem;
+  background: var(--nav);
+  color: var(--text);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.875rem;
+}
 /* 🏷️ Tipografia semântica */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
@@ -151,7 +161,7 @@ th {
   justify-content: space-between;
   padding: 1rem 1rem;
   background: var(--nav);
-  color: #fff;
+  color: #012b5c;
   flex-wrap: wrap; /* permite que links quebrem de linha */
   z-index: 1000; /* fica acima do restante da página */
   box-shadow: 0 2px 6px rgba(136, 201, 231, 0.15);
@@ -177,7 +187,7 @@ main, .container {
 }
 
 .nav-links a {
-  color: #fff;
+  color: #11253b;
   text-decoration: none;
   font-weight: 500;
   white-space: nowrap;
