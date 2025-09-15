@@ -4,9 +4,9 @@ import autadesouza from "../assets/autadesouza.png";
 export default function Sociais() {
   return (
     <div className="main-content">
-      <h1>Campanha de Fraternidade Auta de Souza</h1>
 
       <section>
+      <h1>Campanha de Fraternidade Auta de Souza</h1>
         <p>
           A Campanha de Fraternidade Auta de Souza é uma iniciativa do movimento
           espírita, realizada também pela Comunhão Espírita Cristo Redentor, que

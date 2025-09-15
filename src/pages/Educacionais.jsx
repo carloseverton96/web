@@ -4,9 +4,10 @@ import React from "react";
 export default function Educacionais() {
   return (
     <main className="main-content">
-      <h1>Educação Espírita na Comunhão Espírita Cristo Redentor</h1>
+      
 
       <section>
+        <h1>Educação Espírita na Comunhão Espírita Cristo Redentor</h1>
         <h2>Evangelização Infantil na Doutrina Espírita</h2>
         <p>
           A evangelização infantil é um processo de educação e orientação espiritual que visa ajudar as crianças a desenvolverem suas potencialidades espirituais e morais.

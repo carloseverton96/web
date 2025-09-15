@@ -5,13 +5,13 @@ import  "../index.css";
 export default function Inicio() {
   return (
     <section>
+<h1>Comunhão Espírita Cristo Redentor</h1>
       <h1>Bem-vindo</h1>
       <p>
         Este é um espaço dedicado à divulgação da Doutrina Espírita,
         trazendo seus princípios, ensinamentos e reflexões para o dia a dia.
       </p>
 
-<h1>Comunhão Espírita Cristo Redentor</h1>
 
       <section>
         <h2>História</h2>

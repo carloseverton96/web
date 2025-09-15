@@ -1,31 +1,28 @@
 /* 🎨 Variáveis globais - PRINCIPAL */
-
 :root {
-  --bg: #f8fafc;
-  --text: #111;
-  --nav: #8be0f5;
-  --accent: #0ea5a4;
-  --heading-font: Inter, system-ui, Arial, sans-serif;
-  --body-font: Inter, system-ui, Arial, sans-serif;
-  --radius: 8px;
+  --bg: #f8fafc; /* cor de fundo principal */
+  --text: #111; /* cor de texto principal */
+  --nav: #8be0f5; /* cor do navbar */
+  --accent: #0ea5a4; /* cor de destaque para botões/links */
+  --heading-font: Inter, system-ui, Arial, sans-serif; /* fonte para títulos */
+  --body-font: Inter, system-ui, Arial, sans-serif; /* fonte para textos */
+  --radius: 8px; /* raio de borda padrão */
 }
 
-
 /* 🔧 Reset e padrão base */
-
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* inclui padding e border no cálculo de largura/altura */
 }
 
 /* 🌍 Base do documento */
 html {
   font-size: 100%; /* 1rem = 16px */
   line-height: 1.5;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* rolagem suave ao clicar em âncoras */
 }
 
 body {
@@ -35,6 +32,7 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   line-height: 1.5;
+  padding-top: 0; /* removido o padding fixo para evitar sobreposição no mobile */
 }
 
 /* 🏷️ Tipografia semântica */
@@ -62,6 +60,7 @@ small {
   font-size: 0.875rem;
   opacity: 0.8;
 }
+
 /* 🔗 Links */
 a {
   color: var(--accent);
@@ -141,10 +140,9 @@ th {
   font-weight: 600;
 }
 
-
 /* 🔗 Navbar */
 .navbar {
-  position: fixed; /* fixa no topo */
+  position: sticky; /* mantém no topo sem sair do fluxo do documento */
   top: 0;
   left: 0;
   width: 100%;
@@ -154,15 +152,14 @@ th {
   padding: 1rem 1rem;
   background: var(--nav);
   color: #fff;
-  flex-wrap: wrap; /* permite quebrar para a próxima linha se necessário */
-  z-index: 1000; /* garante que fique acima do restante da página */
-  box-shadow: 0 2px 6px rgba(136, 201, 231, 0.15); /* sombra para destacar */
-  
+  flex-wrap: wrap; /* permite que links quebrem de linha */
+  z-index: 1000; /* fica acima do restante da página */
+  box-shadow: 0 2px 6px rgba(136, 201, 231, 0.15);
 }
 
-/* adiciona um espaço no topo do conteúdo principal */
-body {
-  padding-top: 70px; /* ajuste conforme a altura do navbar */
+/* garante espaço entre navbar e conteúdo */
+main, .container {
+  margin-top: 40px; /* ajustável conforme altura da navbar */
 }
 
 .brand {
@@ -173,24 +170,23 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  flex-wrap: wrap; /* deixa os links quebrarem de linha quando não couberem */
+  flex-wrap: wrap;
   gap: 0.75rem;
   justify-content: center;
-  flex-grow: 1; /* faz os links ocuparem o espaço disponível */
+  flex-grow: 1;
 }
 
 .nav-links a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  white-space: nowrap; /* evita que o texto do link quebre no meio */
+  white-space: nowrap;
   transition: color 0.2s;
 }
 
 .nav-links a:hover {
   color: var(--accent);
 }
-
 
 /* 📦 Container principal */
 .container {
@@ -201,7 +197,6 @@ body {
 }
 
 /* 📰 Seções */
-
 section {
   margin-top: 1.5rem;
   padding: 1rem;
@@ -216,7 +211,7 @@ section + section {
 /* ✝️ Seção Evangelho no Lar */
 .evangelho-section {
   display: flex;
-  gap: 3rem; /* espaçamento entre as divs */
+  gap: 3rem;
   align-items: flex-start;
   text-align: left;
   margin-top: 2rem;
@@ -230,17 +225,32 @@ section + section {
 
 /* 📱 Responsividade */
 @media (max-width: 640px) {
-  
-  html { font-size: 90%; } /* reduz leve no mobile */
-  
+  html { font-size: 90%; }
+
   section { padding: 0.75rem; }
-  
+
   h1 { font-size: 1.75rem; }
-  
   h2 { font-size: 1.5rem; }
-  
+
+  /* Navbar se adapta no mobile */
+  .navbar {
+    flex-direction: column; /* empilha logo e links */
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
   .nav-links {
-    display: inline-flex;
+    flex-direction: column; /* links empilhados */
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  /* Garante ainda mais espaço no conteúdo para não sobrepor */
+  main, .container {
+    margin-top: 100px;
   }
 
   .evangelho-section {
@@ -252,11 +262,7 @@ section + section {
   .evangelho-section img {
     margin-bottom: 1rem;
   }
-
-  
 }
-
-
 
 /* Card principal */
 .ImgMediaCard-card {
@@ -267,14 +273,12 @@ section + section {
   overflow: hidden;
 }
 
-/* Imagem dentro do card */
 .ImgMediaCard-media {
   object-fit: cover;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
 }
 
-/* Título (Typography h5) */
 .ImgMediaCard-title {
   font-family: var(--heading-font);
   color: var(--text);
@@ -282,7 +286,6 @@ section + section {
   font-weight: 700;
 }
 
-/* Texto descritivo (Typography body2) */
 .ImgMediaCard-description {
   color: var(--text);
   opacity: 0.9;
@@ -290,7 +293,6 @@ section + section {
   line-height: 1.5;
 }
 
-/* Actions (Botões) */
 .ImgMediaCard-actions {
   padding: 1rem;
   display: flex;
@@ -298,7 +300,6 @@ section + section {
   justify-content: flex-start;
 }
 
-/* Botão (Share / Learn More) */
 .ImgMediaCard-button {
   text-transform: uppercase;
   font-size: 0.875rem;

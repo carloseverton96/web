@@ -6,10 +6,13 @@ const Parte2 = lazy(() => import("../components/biografias/Parte2"));
 export default function Biografias() {
   return (
     <div className="main-content">
-      <h1>Biografias</h1>
-      <Suspense fallback={<p>Carregando...</p>}>
+      
+      <Suspense fallback=
+      
+      {<p>Carregando...</p>}>
+        <section><h1>Biografias</h1>
         <Parte1 />
-        <Parte2 />
+        <Parte2 /></section>
         {/* ...restante */}
         {/* o conteúdo desta página responde diretamente aos arquivos que estão em components > */}
       </Suspense>
