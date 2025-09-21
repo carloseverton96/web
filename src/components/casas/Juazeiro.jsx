@@ -3,26 +3,88 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import CardActions from '@mui/material/CardActions';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 
 const cards = [
   {
     id: 1,
-    title: 'Comunhão Espírita Cristo Redentor - CECRE',
+    title: 'COMUNHÃO ESPÍRITA CRISTO REDENTOR - CECRE',
     description: 'Rua Delmiro Gouveia, 1493, Salesianos, Juazeiro do Norte - CE, 63050-216.',
-    image: '/public/logocecre.png',
-    url: 'https://share.google/knHrUrYdcGvT2xIeq',
+    image: '/src/assets/logocecre.png',
+    url: 'https://maps.app.goo.gl/PCFFsQcVvXMsNFCM8',
   },
   {
     id: 2,
-    title: 'Grupo Espírita Paulo de Tarso - GEPT',
+    title: 'GRUPO ESPÍRITA PAULO DE TARSO - GEPT',
     description: 'R. Sr. do Bonfim, 859 - João Cabral, Juazeiro do Norte - CE, 63050-290.',
-    image: '/public/logogept.jpg',
+    image: '/src/assets/logogept.jpg',
     url: 'https://maps.app.goo.gl/bqxmU5Pwp6WgUHje8',
   },
+  {
+    id: 3,
+    title: 'CENTRO ESPÍRITA CRISTÃO NOSSO LAR E AMBULATORIOS ANDRE LUIZ',
+    description: 'AV. Paulo Maia, 870 - Antônio Vieira, Juazeiro do Norte - CE, 63022-455.',
+    image: '/src/assets/logonossolar.png',
+    url: 'https://maps.app.goo.gl/eiRQuKQQvtoFXBjx9',
+  },
+  {
+    id: 4,
+    title: 'INSTITUIÇÃO ESPÍRITA CASA DA ESPERANCA',
+    description: 'R. Geová Magalhães Sobreira - Tiradentes, Juazeiro do Norte - CE, 63031-035.',
+    image: '/src/assets/logocasadaesperanca.jpg',
+    url: 'https://maps.app.goo.gl/g7seSkDu2wtE1sDi9',
+  },
+ {
+    id: 5,
+    title: 'Centro Espírita Fraternidade e Vida',
+    description: 'R. Beato José Lourenço, 268 - Tiradentes, Juazeiro do Norte - CE, 63031-600',
+    image: '/src/assets/logoevangelhoevida.jpg',
+    url: 'https://maps.app.goo.gl/PXLzJ54XBXXbXYWw9',
+},
+{
+    id: 6,
+    title: 'Grupo Fraterno O Semeador',
+    description: 'Rua Pedro Cassiano dos Santos - Frei Damião, Juazeiro do Norte - CE',
+    image: '/src/assets/logosemeador.jpg',
+    url: 'https://maps.app.goo.gl/JoinT7aPFXCVTwJV8',
+},
+{
+    id: 7,
+    title: 'Espaço Fraterno Maria de Nazaré',
+    description: 'R. Martiniano de Santana, 673 - Tiradentes, Juazeiro do Norte - CE, 63031-160',
+    image: '/src/assets/educacao.jpeg',
+    url: 'https://maps.app.goo.gl/ct2Vf78vPsBtkPe19/', 
+},
+{
+    id: 8,
+    title: 'Centro Espírita Maria de Nazaré',
+    description: 'R. Cel. Daudete Gondim, 26 - Antônio Vieira, Juazeiro do Norte - CE, 63041-145',
+    image: '/src/assets/educacao.jpeg',
+    url: 'https://maps.app.goo.gl/9JQGJzmoa49qacX49', 
+},
+{
+    id: 9,
+    title: 'Grupo Espírita Casa do Caminho - GECC',
+    description: 'R. da Paz, 1728 - João Cabral, Juazeiro do Norte - CE, 63051-050',
+    image: '/src/assets/logocasadocaminho.jpg',
+    url: 'https://maps.app.goo.gl/YRjEuFqyonTe9hX59', // adicionar link exato do Google Maps
+},
+{
+    id: 10,
+    title: 'Grupo da Fraternidade Irmã Sheila GEFIS',
+    description: 'Rua Coronel Nery, 802 - Pio XII, Juazeiro do Norte - CE, 63020-330',
+    image: '/src/assets/logogefis.jpg',
+    url: 'https://maps.app.goo.gl/rFEQ4fJY1F8eCNYK8',
+},
+{
+    id: 11,
+    title: 'Centro Espírita Missionários da Luz',
+    description: 'Vila Afonso Melo, 62 - Salesianos, Juazeiro do Norte - CE, 63050-193',
+    image: '/src/assets/logocemil.jpg',
+    url: 'https://maps.app.goo.gl/5LtRKCDbfKbjdWC78',
+},
+
 ];
 
 function SelectActionCard() {
@@ -41,6 +103,10 @@ function SelectActionCard() {
       {cards.map((card, index) => (
         <Card key={card.id}>
           <CardActionArea
+            component="a"
+            href={card.url}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setSelectedCard(index)}
             data-active={selectedCard === index ? '' : undefined}
           >
@@ -54,16 +120,10 @@ function SelectActionCard() {
               <Typography gutterBottom variant="h5" component="div">
                 {card.title}
               </Typography>
-              <Typography variant="body2">
+              <Typography variant="body2" color="text.secondary">
                 {card.description}
               </Typography>
             </CardContent>
-            <CardActions>
-              <Button size="small" component="a" href={card.url} target="_blank" rel="noopener noreferrer">
-                Ver mapa
-              </Button>
-              
-            </CardActions>
           </CardActionArea>
         </Card>
       ))}

@@ -112,7 +112,7 @@ button {
   transition: background 0.2s ease;
 }
 button:hover {
-  background: #004df3;
+  background: #93b1f1;
 }
 button:disabled {
   opacity: 0.6;
@@ -314,7 +314,7 @@ section + section {
   text-transform: uppercase;
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--accent);
+  color: var(--bg);
   border: none;
   background: transparent;
 }
