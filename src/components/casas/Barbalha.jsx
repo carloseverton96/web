@@ -7,13 +7,14 @@ import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
+import logoluzdocaminho from '/src/assets/logoluzdocaminho.jpg'
 
 const cards = [
   {
     id: 1,
     title: 'CENTRO ESPÍRITA LUZ DO CAMINHO - CELC',
     description: 'Av. Gen. Costa Cavalcante, 790 - Centro, Barbalha - CE, 63180-000.',
-    image: process.env.PUBLIC_URL + '/src/assets/logoluzdocaminho.jpg',
+    image: logoluzdocaminho,
     url: 'https://maps.app.goo.gl/QKsGBiQh5bNbGQYw5',
   },
   

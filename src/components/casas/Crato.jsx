@@ -7,41 +7,46 @@ import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
+import logobezerra from '/src/assets/logobezerra.jpg'
+import logoassociacapallankardec from '/src/assets/logoassociacapallankardec.jpg'
+import logodiscipulosdejesus from '/src/assets/logodiscipulosdejesus.jpg'
+import logoceal from '/src/assets/logoceal.jpg'
+import logoobomsamaritano from '/src/assets/logoobomsamaritano.jpg'
 
 const cards = [
   {
     id: 1,
     title: 'CENTRO ESPÍRITA BEZERRA DE MENEZES',
     description: 'R. Nelson Alencar, 355 - Centro, Crato - CE, 63100-110.',
-    image: '/src/assets/logobezerra.jpg',
+    image: logobezerra,
     url: 'https://maps.app.goo.gl/pCTLXGE9kSgFzBYL7',
   },
   {
     id: 2,
     title: 'ASSOCIAÇÃO ESPÍRITA ALLAN KARDEC',
     description: 'R. Padre Ibiapina, 190 - Santa Luzia, Crato - CE, 63101-020.',
-    image: '/src/assets/logoassociacapallankardec.jpg',
+    image: logoassociacapallankardec,
     url: 'https://maps.app.goo.gl/8vYmzUvDkrGo9KGt7',
   },
   {
     id: 3,
     title: 'LAR ESPÍRITA DISCÍPULOS DE JESUS',
     description: 'R. dos Cariris, 92 - Vila Alta, Crato - CE, 63113-622.',
-    image: '/src/assets/logodiscipulosdejesus.jpg',
+    image: logodiscipulosdejesus,
     url: 'https://maps.app.goo.gl/jkPieMMUKeroNuD99',
   },
   {
     id: 4,
     title: 'CENTRO ESPÍRITA ANDRÉ LUIZ - CEAL',
     description: 'R. Delmiro Gouvêia, 67 - Ossian Araripe "Caixa Dágua", Crato - CE, 63107-070.',
-    image: '/src/assets/logoceal.jpg',
+    image: logoceal,
     url: 'https://maps.app.goo.gl/4BqK5kDsvA9rj3A18',
   },
   {
     id: 5,
     title: 'LAR ESPÍRITA O BOM SAMARITANO',
     description: 'R. Primeiro de Maio, 185 - São Miguel, Crato - CE, 63122-200.',
-    image: '/src/assets/logoobomsamaritano.jpg',
+    image: logoobomsamaritano,
     url: 'https://maps.app.goo.gl/86L36YaY6yp3FaDj8',
   },
     
