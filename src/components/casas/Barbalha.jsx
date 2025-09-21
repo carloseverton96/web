@@ -13,7 +13,7 @@ const cards = [
     id: 1,
     title: 'CENTRO ESPÍRITA LUZ DO CAMINHO - CELC',
     description: 'Av. Gen. Costa Cavalcante, 790 - Centro, Barbalha - CE, 63180-000.',
-    image: '/src/assets/logoluzdocaminho.jpg',
+    image: process.env.PUBLIC_URL + '/src/assets/logoluzdocaminho.jpg',
     url: 'https://maps.app.goo.gl/QKsGBiQh5bNbGQYw5',
   },
   
