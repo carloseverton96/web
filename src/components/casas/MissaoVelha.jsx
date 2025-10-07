@@ -10,13 +10,13 @@ import CardActionArea from '@mui/material/CardActionArea';
 import logocefrac from '/src/assets/logocefrac.jpg'
 
 const cards = [
-  {
-    id: 1,
-    title: 'CENTRO ESPÍRITA FRATERNIDADE CRISTA - CEFRAC',
-    description: 'R. Padre José Fco Ferreira, 314 - Missão VelhaCE, 63200-000.',
-    image: logocefrac,
-    url: 'https://maps.app.goo.gl/zZ9VezBC26xAzc757',
-  },
+  // {
+  //   id: 1,
+  //   title: 'CENTRO ESPÍRITA FRATERNIDADE CRISTA - CEFRAC',
+  //   description: 'R. Padre José Fco Ferreira, 314 - Missão VelhaCE, 63200-000.',
+  //   image: logocefrac,
+  //   url: 'https://maps.app.goo.gl/zZ9VezBC26xAzc757',
+  // },
   
 ];
 

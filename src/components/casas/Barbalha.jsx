@@ -10,13 +10,13 @@ import CardActionArea from '@mui/material/CardActionArea';
 import logoluzdocaminho from '/src/assets/logoluzdocaminho.jpg'
 
 const cards = [
-  {
-    id: 1,
-    title: 'CENTRO ESPÍRITA LUZ DO CAMINHO - CELC',
-    description: 'Av. Gen. Costa Cavalcante, 790 - Centro, Barbalha - CE, 63180-000.',
-    image: logoluzdocaminho,
-    url: 'https://maps.app.goo.gl/QKsGBiQh5bNbGQYw5',
-  },
+  // {
+  //   id: 1,
+  //   title: 'CENTRO ESPÍRITA LUZ DO CAMINHO - CELC',
+  //   description: 'Av. Gen. Costa Cavalcante, 790 - Centro, Barbalha - CE, 63180-000.',
+  //   image: logoluzdocaminho,
+  //   url: 'https://maps.app.goo.gl/QKsGBiQh5bNbGQYw5',
+  // },
   
 ];
 
