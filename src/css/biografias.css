@@ -1,0 +1,157 @@
+.bio-container {
+  background: linear-gradient(180deg, var(--bg), var(--post-bg)); /* Branco → #F2F2F2 */
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  font-family: var(--body-font); /* Montserrat */
+  color: var(--text); /* #1D261E */
+}
+
+.bio-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+}
+
+.bio-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1100px;
+  background: var(--bg); /* #ffffff */
+  border-radius: var(--radius); /* 8px — consistente com o resto do site */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.bio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(3, 166, 136, 0.2); /* sombra com cor da logo */
+}
+
+.bio-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.bio-image {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+  filter: brightness(0.95); /* mais suave */
+}
+
+.bio-card:hover .bio-image {
+  filter: brightness(1);
+  transform: scale(1.03);
+}
+
+.bio-text {
+  flex: 1;
+  padding: 2rem;
+}
+
+.bio-text h2 {
+  font-family: var(--heading-font); /* Charm */
+  font-size: 2rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.bio-subtitle {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  color: var(--accent); /* destaque com cor da logo */
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.bio-text p {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.bio-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.6rem;
+  background: var(--accent); /* #03A688 */
+  color: white;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(3, 166, 136, 0.3);
+  font-family: var(--body-font);
+}
+
+.bio-button:hover {
+  background: var(--accent-hover); /* #15BF70 */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(3, 166, 136, 0.4);
+}
+
+.bio-extra {
+  margin-top: 5rem;
+  text-align: center;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.bio-extra h3 {
+  font-family: var(--heading-font); /* Charm */
+  font-size: 1.8rem;
+  color: var(--text);
+  margin-bottom: 2rem;
+}
+
+.bio-extra ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bio-extra li {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius);
+  margin-bottom: 0.8rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  font-family: var(--body-font);
+  color: var(--text);
+  border-left: 4px solid var(--accent); /* toque de cor */
+}
+
+.bio-quote {
+  font-style: italic;
+  background: var(--post-bg); /* #F2F2F2 */
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  font-family: var(--body-font);
+  color: var(--text);
+  position: relative;
+}
+
+.bio-quote::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  font-size: 4rem;
+  color: var(--logo-2);
+  opacity: 0.2;
+  font-family: serif;
+}
+
+.bio-quote span {
+  display: block;
+  margin-top: 1rem;
+  color: var(--accent);
+  font-weight: 700;
+  font-family: var(--heading-font); /* Charm no nome da citação */
+}

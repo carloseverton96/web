@@ -1,84 +1,68 @@
 import React from "react";
-import evangelho from "../assets/evangelho.png";
-import  "../index.css";
+import { Helmet } from "react-helmet-async";
+import "../css/index.css";
+import "../css/Servicos.css";
+import "../css/contatos.css";
+import "../css/biografias.css";
+import edna from "../../public/edna.jpg";
+import everton from "../../public/everton.jpg";
+import Servicos from "./Servicos";
+import Contatos from "./Contato";
+import Biografias from "./Biografias";
 
 export default function Inicio() {
   return (
-    <section>
-<h1>Comunhão Espírita Cristo Redentor</h1>
-      <h1>Bem-vindo</h1>
-      <p>
-        Este é um espaço dedicado à divulgação da Doutrina Espírita,
-        trazendo seus princípios, ensinamentos e reflexões para o dia a dia.
-      </p>
+    <>
+      {/* SEO / Cabeçalho */}
+      <Helmet>
+        <title>EA Estética - Nossa Equipe</title>
+        <meta
+          name="description"
+          content="Conheça nossos profissionais especializados em estética e bem-estar."
+        />
+        <meta
+          name="keywords"
+          content="estética, beleza, profissionais, cuidados com a pele, bem-estar"
+        />
+        <link rel="canonical" href="https://www.site.com" />
+      </Helmet>
 
-
-      <section>
-        <h2>História</h2>
-        <p>
-          Fundada em 18 de julho de 1988, a Comunhão Espírita Cristo Redentor – CECRE tem como finalidade o estudo, a difusão e a prática do Espiritismo no seu tríplice aspecto, tendo como lema: Liberdade, Igualdade e Fraternidade.
-        </p>
-        <p>
-          Em seus 35 anos de existência, o CECRE realizou diversas atividades para a difusão do Espiritismo e continua executando ações como palestras públicas, estudos da Doutrina Espírita (sistematizado, aprofundado e mediúnico), harmonização de trabalhadores, atendimento fraterno, Campanha de Fraternidade Auta de Souza, assistência a moradores de rua, Clube das Mães e evangelização infantojuvenil.
-        </p>
-      </section>
-
-      <section>
-              <h2>O Passe</h2>
-              <p>
-                O passe na casa espírita é uma prática espiritual que consiste na imposição das mãos com a intenção de transmitir energias positivas ao paciente. Trata-se de uma forma de cura espiritual que pode aliviar o sofrimento físico e emocional.
-              </p>
       
-              <h3>Como funciona?</h3>
-              <p>
-                O passe é aplicado por um médium passista — uma pessoa preparada para transmitir energias positivas. O passista impõe as mãos sobre o paciente e concentra-se em transmitir paz e harmonia.
-              </p>
-      
-              <h3>Finalidade</h3>
-              <p>
-                O objetivo do passe é auxiliar na cura física e emocional, aliviar dores, melhorar o estado geral de saúde e promover o bem-estar.
-              </p>
-            </section>
-      
-            <section class="evangelho-section">
-  <div>
-    <h2>Evangelho no Lar</h2>
-    <img
-      src={evangelho}
-      alt="Segundo passo da solicitação"
-    />
+      {/* Conteúdo Principal */}
+      <main className="container">
+        <section id="profissionais" className="profissionais-section">
+          
+          <div className="profissionais-grid-4col">
+  <div className="prof-col foto-col">
+    <img src={edna} alt="Edna - Esteticista" className="prof-img" />
   </div>
-
-  <div>
-    <h3>Roteiro prático</h3>
-    <p>
-      O Evangelho no Lar é uma reunião semanal em família, com leitura e reflexão sobre os ensinamentos cristãos. Fortalece a espiritualidade e o equilíbrio no ambiente doméstico.
-    </p>
-    <p>
-      Para implantá-lo: converse com a família, defina dia e horário, escolha uma mensagem inicial, abra o Evangelho Segundo o Espiritismo (aleatoriamente ou de forma sequencial), reflita sobre o conteúdo e finalize com uma prece. O encontro deve durar entre 15 e 20 minutos. Coloque uma jarra com água para fluidificação.
+  <div className="prof-col dados-col">
+    <h2 className="prof-nome">Edna Alves</h2>
+    <p className="prof-cargo">Esteticista</p>
+    <p className="prof-descricao">
+      Alia sua vivência em estética facial e corporal para
+      oferecer tratamentos personalizados com foco em resultados e bem-estar.
     </p>
   </div>
-</section>
-
+  <div className="prof-col dados-col">
+    <h2 className="prof-nome">Éverton Alves</h2>
+    <p className="prof-cargo">Biomédico - Especialista em Vigilância Sanitária</p>
+    <p className="prof-descricao">
+      Pós-graduando em Estética combina técnicas modernas na área da estética avançada, promovendo saúde, equilíbrio corporal e autoestima em cada atendimento.
+    </p>
+  </div>
+  <div className="prof-col foto-col">
+    <img src={everton} alt="Everton Alves - Biomédico" className="prof-img" />
+  </div>
+</div>
+      <Servicos/>
+      <Contatos/> 
+      <Biografias/>   
+        </section>
       
-            <section>
-              <h2>Livraria</h2>
-              <p>
-                A Livraria da Comunhão Espírita Cristo Redentor oferece uma ampla variedade de obras espíritas, incluindo os livros fundamentais de Allan Kardec:
-              </p>
-              <ul>
-                <li><b>O Livro dos Espíritos</b> — base do Espiritismo;</li>
-                <li><b>O Livro dos Médiuns</b> — sobre mediunidade;</li>
-                <li><b>O Evangelho Segundo o Espiritismo</b> — interpretação cristã;</li>
-                <li><b>O Céu e o Inferno</b> — vida após a morte;</li>
-                <li><b>A Gênese</b> — sobre a origem do universo e humanidade.</li>
-              </ul>
-              <p>
-                Além dessas, há diversas outras obras disponíveis. Visite também a Biblioteca Chico Xavier, onde é possível ler e devolver os livros após a leitura.
-              </p>
-            </section>
+      </main>
 
-    </section>
-    
+      <footerfoote/>
+    </>
   );
 }

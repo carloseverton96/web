@@ -1,0 +1,89 @@
+/* 🌸 Seção de Serviços */
+.servicos-section {
+  background: var(--post-bg); /* #F2F2F2 — fundo claro da paleta de posts */
+  padding: 5% 4%;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.servicos-titulo {
+  font-family: var(--heading-font); /* Charm para títulos */
+  font-size: 2rem;
+  color: var(--text); /* #1D261E */
+  margin-bottom: 1rem;
+}
+
+.servicos-intro {
+  font-family: var(--body-font); /* Montserrat para texto introdutório */
+  font-size: 1.1rem;
+  color: var(--post-accent-2); /* #5A735B — tom mais suave que o preto */
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-inline: auto;
+  line-height: 1.6;
+}
+
+/* Grid com duas colunas */
+.servicos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  text-align: left;
+}
+
+/* Cards individuais */
+.servico-card {
+  background: var(--bg); /* #ffffff */
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid rgba(50, 64, 51, 0.08); /* sutil, usando var(--post-accent-3) */
+}
+
+.servico-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(3, 166, 136, 0.15); /* sombra com cor da logo */
+}
+
+.servico-card h3 {
+  font-family: var(--heading-font); /* Charm para títulos dos serviços */
+  font-size: 1.4rem;
+  color: var(--accent); /* #03A688 */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.servico-card ul {
+  list-style: none;
+  padding-left: 0;
+  font-family: var(--body-font); /* Montserrat */
+}
+
+.servico-card li {
+  font-size: 1rem;
+  padding: 0.4rem 0;
+  color: var(--text);
+  border-bottom: 1px solid var(--post-accent-3); /* #324033 com opacidade implícita via RGBA se quiser mais suave */
+}
+
+.servico-card li:last-child {
+  border-bottom: none;
+}
+
+/* 📱 Responsividade */
+@media (max-width: 768px) {
+  .servicos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .servico-card {
+    text-align: center;
+  }
+
+  .servico-card ul {
+    text-align: left;
+    display: inline-block;
+  }
+}
