@@ -2,17 +2,49 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image" href="/logocecre.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CECRE</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/logoeaestetica.png" />
+
+    <!-- Schema.org JSON-LD (dados estruturados para SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "EA Estética",
+      "alternateName": "Carlos Everton Alves Mangueira & Edna Maria Alves Mangueira",
+      "legalName": "Carlos Everton Alves Mangueira & Edna Maria Alves Mangueira",
+      "description": "Clínica de estética e bem-estar especializada em tratamentos personalizados e cuidados com a saúde da pele.",
+      "url": "https://www.seusite.com",
+      <!-- "logo": "https://www.seusite.com/imagens/logo.png",
+      "email": "contato@seusite.com", -->
+      "telephone": "+55 88 99999-9999",
+      "foundingDate": "2025-01-01",
+      "address": {
+        "@type": "PostalAddress",
+        <!-- "streetAddress": "Rua Exemplo, 123", -->
+        "addressLocality": "Juazeiro do Norte",
+        "addressRegion": "CE",
+        "postalCode": "63000-000",
+        "addressCountry": "BR"
+      },
+      "sameAs": [
+        <!-- "https://www.instagram.com/eaestetica",
+        "https://www.facebook.com/eaestetica",
+        "https://maps.google.com/?cid=SEU_ID_DO_GOOGLE_BUSINESS" -->
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <footer>
-  <address>
-    © 2025 COMUNHÃO ESPÍRITA CRISTO REDENTOR.
-  </address>
-</footer>
   </body>
 </html>
+
+<!-- 📝 Observações importantes:
+Substitua"SEU_ID_DO_GOOGLE_BUSINESS" pelo CID real do seu Google Meu Negócio (ex: ).12345678901234567890
+Atualize como URLs :
+https://www.seusite.com→ pelo domínio real (ex: )https://eaestetica.com.br
+Verifique se existem e estão acessíveis./imagens/logo.png/logoeaestetica.png -->
